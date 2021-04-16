@@ -1,0 +1,43 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0fbfc;
+  color: #293241;
+}
+
+a {
+  text-decoration: none;
+  color: #ee6c4d;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  list-style: none;
+}
+
+.hi {
+  background-color: #3d5a80;
+}
+
+.about {
+  background-color: #98c1d9;
+}
+
+.contact {
+  background-color: #3d5a80;
+}
+
+.img {
+  width: 400px;
+  height: auto;
+}
