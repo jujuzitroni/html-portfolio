@@ -7,6 +7,7 @@
 body {
   background-color: #e0fbfc;
   color: #293241;
+  margin: 0;
 }
 
 a {
@@ -18,6 +19,13 @@ a:hover {
   text-decoration: underline;
 }
 
+nav {
+  width: 700px;
+  align-content: center;
+  border: hotpink;
+  border-style: solid;
+}
+
 ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -26,17 +34,12 @@ ul {
 }
 
 .hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background-color: #3d5a80;
 }
 
-.about {
-  background-color: #98c1d9;
-}
-
-.contact {
-  background-color: #3d5a80;
-}
-
+/* margin zentriert den bildausschnitt */
 .img {
   width: 400px;
   height: auto;
@@ -49,4 +52,20 @@ ul {
   position: relative;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.about {
+  background-color: #98c1d9;
+}
+
+.icon {
+  width: 4em;
+}
+
+.contact {
+  background-color: #3d5a80;
+}
+
+.download-icon {
+  width: 1em;
 }
