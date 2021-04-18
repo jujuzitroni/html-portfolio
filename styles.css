@@ -7,11 +7,27 @@
 body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /* auto-fit geht hier nicht. aber der browser kommt klar. finde raus, wie es richtig geht! */
   grid-template-rows: auto-fit 1fr;
-  background-color: #e0fbfc;
-  color: #293241;
+  background-color: #98c1d9;
+  color: #03071e;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  /* max-width: 80%;
+  justify-items: center; */
+  justify-items: center;
+}
+
+header {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+main {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  max-width: 80%;
 }
 
 a {
@@ -29,15 +45,8 @@ h2 {
   padding: 0;
 }
 
-header {
-  grid-column-start: 2;
-  grid-row-start: 1;
-}
-
-main {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
+h1 {
+  font-size: 4em;
 }
 
 nav {
@@ -56,6 +65,7 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   background-color: #3d5a80;
+  padding: 2em;
 }
 
 /* margin zentriert den bildausschnitt */
@@ -71,11 +81,12 @@ ul {
   position: relative;
   border-radius: 50%;
   overflow: hidden;
-  margin: 3em 3em 3em 10em;
+  margin: 3em 3em 3em 8em;
 }
 
 .hero-text {
-  margin-top: 12em;
+  margin-top: 2em;
+  font-weight: bold;
 }
 
 #about {
@@ -90,10 +101,6 @@ ul {
   max-width: 300px;
 }
 
-.icon img {
-  width: 4em;
-}
-
 .icon {
   width: 100%;
   display: grid;
@@ -101,10 +108,37 @@ ul {
   margin-bottom: 1em;
 }
 
+.icon img {
+  width: 4em;
+}
+
 #contact {
   background-color: #3d5a80;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-info {
+  display: grid;
+  align-items: end;
+  margin: 2em;
+}
+
+#contact h2 {
+  margin-bottom: 1em;
 }
 
 .download-icon {
   width: 1em;
+}
+
+#easteregg {
+  min-height: 800px;
+  display: grid;
+  justify-content: center;
+  align-content: end;
+}
+
+#onigiri {
+  width: 3em;
 }
